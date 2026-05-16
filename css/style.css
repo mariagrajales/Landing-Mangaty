@@ -496,3 +496,93 @@ body {
         max-width: 100%;
     }
 }
+
+/* ==========================================================================
+   SECCIÓN ARQUITECTURA TÉCNICA (NUEVA)
+   ========================================================================== */
+.tech-architecture-section {
+    background: #fff4f6; /* Volvemos al rosa muy claro para mantener consistencia */
+    color: #222;
+    padding: 5em 0;
+}
+.tech-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.tech-label {
+    color: #ff4081;
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 0.08em;
+    display: inline-block;
+    margin-bottom: 0.8em;
+}
+.tech-container h2 {
+    font-size: 2.3em;
+    font-weight: 900;
+    margin: 0 0 0.4em 0;
+}
+.tech-subtitle {
+    color: #b0aeb8;
+    font-size: 1.1em;
+    margin-bottom: 3em;
+    max-width: 600px;
+}
+.tech-grid {
+    display: flex;
+    gap: 2em;
+}
+.tech-card {
+    background: #fff;
+    border: 1.5px solid #ffe3f0;
+    border-radius: 1.2em;
+    padding: 2em;
+    flex: 1;
+    box-shadow: 0 6px 24px #ff6f9b10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+.tech-icon {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.tech-card h3 {
+    margin: 0 0 0.8em 0;
+    font-size: 1.3em;
+    color: #222;
+}
+.tech-card p {
+    color: #8d8d8d;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+}
+.tech-metric {
+    background: #ff40811a;
+    color: #ff4081;
+    padding: 0.4em 1em;
+    border-radius: 2em;
+    font-size: 0.85em;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+/* Ajuste para que los botones de los enlaces se vean bien */
+.hero-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Responsivo para la nueva sección */
+@media (max-width: 968px) {
+    .tech-grid {
+        flex-direction: column;
+    }
+}

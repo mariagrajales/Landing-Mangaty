@@ -9,14 +9,13 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <!-- Corregido: Se unificó en un solo span para el icono y texto básico -->
             <span class="logo-icon">MangaTy</span>
         </div>
         <nav>
             <a href="#por-que">Por qué</a>
             <a href="#como-funciona">Cómo Funciona</a>
+            <a href="#arquitectura">Arquitectura SOA</a>
         </nav>
-        
     </header>
 
     <main class="main-content">
@@ -25,7 +24,8 @@
             <h1>Tu talento merece ser <span class="highlight">pagado.</span><br>Tu curiosidad, <span class="highlight">recompensada.</span></h1>
             <p class="desc">La primera plataforma de cómics impulsada por IA que elimina las barreras entre creadores independientes y sus lectores. Monetiza desde el primer capítulo.</p>
             <div class="hero-buttons">
-                
+                <a href="#como-funciona" class="btn-primary">Ver Motor de Recomendación</a>
+                <a href="#arquitectura" class="btn-secondary">Especificación Técnica SOA</a>
             </div>
         </section>
         <aside class="dashboard">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-    </section >
+    </section>
 
     <section class="how-works-section" id="como-funciona">
         <div class="how-works-container">
@@ -76,7 +76,7 @@
                         <div class="step-number">02</div>
                         <div class="step-content">
                             <strong>Tú lees, la plataforma aprende</strong>
-                            <p>Cada vez que terminas un capítulo, Mangaty aprende un poco más sobre tus gustos reales. No lo que dices que te gusta, sino lo que realmente disfrutas.</p>
+                            <p>Cada vez que terminas un capítulo, Mangaty aprende un poco más sobre tus gustos reales. No lo que dices que te gusta, sino lo que realmente disfruta.</p>
                         </div>
                     </div>
                     <div class="how-works-step">
@@ -121,6 +121,35 @@
             </div>
         </div>
     </section>
+
+    <section class="tech-architecture-section" id="arquitectura">
+        <div class="tech-container">
+            <span class="tech-label">INFRAESTRUCTURA Y CIENCIA DE DATOS</span>
+            <h2>Arquitectura Orientada a Servicios (SOA)</h2>
+            <p class="tech-subtitle">Procesamiento distribuido de alta concurrencia con modelos NLP locales y persistencia serverless.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Backend Engine (Go)</h3>
+                    <p>Procesamiento transaccional de TyCoins mediante microservicios independientes. Diseñado con Goroutines para soportar alta concurrencia y latencia menor a 50ms.</p>
+                    <span class="tech-metric">Métrica: 10k+ req/sec</span>
+                </div>
+
+                <div class="tech-card">
+                    <h3>Inferencia NLP (BETO)</h3>
+                    <p>Modelo de Lenguaje (Spanish BERT) hosteado localmente para minería de texto. Genera embeddings semánticos que vectorizan la sinopsis de la obra.</p>
+                    <span class="tech-metric">Modelo: Hugging Face Privado</span>
+                </div>
+
+                <div class="tech-card">
+                    <h3>On-Ramp Financiero</h3>
+                    <p>Capa transaccional integrada mediante Webhooks firmados criptográficamente. Garantiza la integridad del ledger de saldos en Neon (PostgreSQL).</p>
+                    <span class="tech-metric">Seguridad: Idempotencia DB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <p>&copy; 2026 Mangaty</p>
     </footer>
